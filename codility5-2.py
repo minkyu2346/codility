@@ -1,13 +1,13 @@
 def solution(A, B, K):
     
-    RE = divmod(B,K)[0]
+    B_Div = divmod(B,K)[0]
     
     
-    div= divmod(A,K)
-    if div[1]==0:
-        C= div[0]-1
+    A_div= divmod(A,K)
+    if A_div[1]==0:
+        A_Div_new= div[0]-1
     else: 
-        C= div[0]
+        A_Div_new= div[0]
 
         
-    return RE-C
+    return B_Div-A_Div_new
